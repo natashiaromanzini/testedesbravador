@@ -1,0 +1,20 @@
+
+
+Cenário 2: Verificar se traz as informações selecionadas da reserva para o usuário
+Objetivo: Verificar se reflete conforme o que é selecionado da reserva para o usuário
+
+Feature: Verificação das informações da reserva
+
+  Scenario Verificar as informações da reserva
+    Given O usuário esta na página que consta as disponibilidades
+    When O usuário seleciona a quantidade de adultos e crianças
+    And O usuário clica em adicionar
+    Then O sistema mostra um cart para o usuário com as informações que o mesmo selecionou para a reserva
+
+Motivo: Verificar se o sistema reflete as informação da reserva corretamente
+
+Cenário 2: na tela após clicar em selecionar disponibilidade, selecionar a quantidade de adutos e crianças e clicar em adicionar, verificar se o cart reflete as informações corretas. 
+
+Cenário 2:
+Resultado Esperado: O cart com as informações refletidas corretamente
+Resultado Obtido: O sistema refletiu as informaçoes que foram selecionads corretamente.

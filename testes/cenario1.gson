@@ -1,0 +1,22 @@
+Cenário 1: Verificar Disponibilidade de Reservas com Datas Válidas
+Objetivo: Verificar se a aplicação esta trazendo as informações corretas, conforme os dados selecionados
+
+Feature: Verificar Disponibilidade de Reservas
+
+   Scenario: Verificar disponibilidade para um período.
+    Given o usuário está na página de reservas online
+    When o usuário seleciona a data de início como "2024-08-20" e a data de fim como "2024-08-23"
+    And o usuário valida o captcha clicando no mesmo
+    And o usuário clica no botão "Verificar Disponibilidade"
+    Then o sistema deve mostrar a disponibilidade de reservas para o período solicitado
+
+
+Motivo: Verifcar se esta refletindo as informações corretamente para fazer reserva conforme o que é selecionado 
+
+Cenário : Acesse o site, insira as datas válidas e verifique se a disponibilidade é exibida corretamente.
+
+Documentação dos Resultados:
+
+Cenário 1:
+Resultado Esperado: Disponibilidade exibida corretamente.
+Resultado Obtido: A aplicação trouxe a informação de disponibilidade conforme o periodo seecionado.

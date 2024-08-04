@@ -1,0 +1,20 @@
+#Cenário 4: possibilidade de alteração de informações da reserva
+#Objetivo: Garantir que o usuário consiga alterar as informações da reserva de forma rapida e dinâmica
+
+Feature: Alteração
+
+  Scenario: Tentar alterar o que foi selecionado após a tela da disponibilidade
+    Given o usuário está na página onde consta a disponibilidade que o mesmo selecionou na tela inicial
+    When o usuário selecionou a qunatidade de adultos e crianças
+    And o usuário clicou em adicionar
+    And o usuário precisou clicou para alterar a quantidade de crianças e adultos
+    Then o sistema deve refletir no cart do que ja foi selecionado anteriormente
+
+#Motivo: Garantir que o usuário aplique corretamente as informações da reserva
+
+
+#cenário na tela da disponibilidade, selecione a quantidade de adultos e a quantidade de crianças e clique em adicionar, após isso tente alterar pela categoria a quantidade de adultos e crianças
+
+Scenario:
+Resultado Esperado: Que seja possivel alterar a quantidade de adultos e crianças da disponiblidade selecionada
+Resultado Obtido: clicando para alterar a quantidade de crianças e adultos, não alterou no cart do que fo selecionado anteriormente, somente foi possivel, após excluir o cart do que foi selecionado e adicionar novamente com as informaçoes novas.

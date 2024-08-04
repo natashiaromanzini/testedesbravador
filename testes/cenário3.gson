@@ -1,0 +1,18 @@
+Cenário 3: Efetuar uma Nova Reserva com Informações Corretas
+Objetivo: Garantir que a aplicação não permita finalizar a reserva sem todas as informações preenchidas
+
+Feature: Efetuar uma Nova Reserva
+
+  Scenario: Efetuar uma reserva com informações corretas
+    Given o usuário está na página da confirmação da reserva e preenchimento das informações do hóspede
+    And o usuário clicou em continuar sem preencher as informações dos hóspedes
+    When o usuário preenche todas as informações necessárias e clica no botão continuar
+    Then o sistema deve redirecionar ele para a pagina para preencher a informação do pagamento
+
+    Motivo: para uma melhor identificação da reserva e evitar divergência de dados, caso por exemplo tenham reservas com nomes iguais de titular.
+
+    Cenário 3: Complete uma reserva com informações corretas.
+
+    Cenário 3:
+Resultado Esperado: Que ao clicar em continuar, obrigue o preenchimento das informações dos hóspedes
+Resultado Obtido: não requeriu as informações dos hóspedes e ao clicar em continuar redirecionou para a pagina deo pagamento
