@@ -1,0 +1,23 @@
+{
+  "name": "teste-desafio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natashiaromanzini/testedesbravador.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natashiaromanzini/testedesbravador/issues"
+  },
+  "homepage": "https://github.com/natashiaromanzini/testedesbravador#readme",
+  "devDependencies": {
+    "cypress": "^13.6.4"
+  }
+
+}
